@@ -1,3 +1,9 @@
+# Setup to enable https on localhost in a basic turborepo (monorepo) webapps
+
+1. ***Update package.json script for "dev" into the app which you want, inside apps folder to:*** `next dev --experimental-https`. In this turborepo I want both apps to run in https. So I have added the experimental https into both package.json .
+
+---
+
 # Turborepo starter
 
 This is an official starter Turborepo.
