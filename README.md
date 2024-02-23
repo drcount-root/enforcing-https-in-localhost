@@ -13,4 +13,35 @@
 
 #### ***Branch name -*** [basic-turborepo-monorepo-webapps-on-https](https://github.com/drcount-root/enforcing-https-in-localhost/tree/basic-turborepo-monorepo-webapps-on-https?tab=readme-ov-file)
 
-1. Update package.json script for "dev" into the app which you want, inside apps folder to: `next dev --experimental-https`.
+1. Update package.json script for "dev" into the app which you want, inside apps folder to: `next dev --experimental-https`
+
+---
+
+## Enforcing React (Vite) application to use https in localhost
+
+#### ***Branch name -*** [react-app-https-enforced-localhost](https://github.com/drcount-root/enforcing-https-in-localhost/tree/react-app-https-enforced-localhost)
+
+1. `npm i vite-plugin-mkcert -D`
+2. Make changes in the `vite.config.js` file as follows:
+
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import mkcert from 'vite-plugin-mkcert'
+
+export default defineConfig({
+  plugins: [
+    react(),
+    mkcert()
+  ]
+})
+```
+
+---
+
+## Enforcing React (CRA) application to use https in localhost
+
+
+---
+
+## Enforcing React (Parcel) application to use https in localhost
