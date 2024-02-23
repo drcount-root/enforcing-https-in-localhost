@@ -41,6 +41,13 @@ export default defineConfig({
 
 ## Enforcing React (CRA) application to use https in localhost
 
+Modify the following into **package.json** file -
+
+```
+{
+  "start": "HTTPS=true react-scripts start"
+}
+```
 
 ---
 
