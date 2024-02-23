@@ -36,14 +36,3 @@ export default defineConfig({
   ]
 })
 ```
-
----
-
-## Enforcing React (CRA) application to use https in localhost
-
-
-```
-
----
-
-## Enforcing React (Parcel) application to use https in localhost
